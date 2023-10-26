@@ -1,0 +1,35 @@
+*, *::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.calculator {
+    border: 3px black solid;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.screen {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.buttons-grid {
+    display: grid;
+}
+
