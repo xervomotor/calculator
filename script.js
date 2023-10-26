@@ -9,6 +9,7 @@ const screen = document.querySelector('.screen');
 let currentInput = '';
 let storedNum = null;
 let currentOperator = null;
+let operationDone = false;
 
 numberBtns.forEach( btn => 
     btn.addEventListener('click', () => appendInput(btn.textContent)) 
