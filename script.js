@@ -19,6 +19,7 @@ operatorBtns.forEach( btn =>
     )
 equalsBtn.addEventListener('click', showResult);
 clearBtn.addEventListener('click', clearScreen);
+deleteBtn.addEventListener('click', deleteLastDigit);
 
 const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
@@ -84,4 +85,16 @@ function clearScreen() {
 
 function isOperator(input) {
     return ['+', '-', '×', '÷'].includes(input);
+}
+
+function deleteLastDigit() {
+    if (!screen.textContent) return;
+
+    const lastChar = screen.textContent.slice(-1);
+    screen.textContent = screen.textContent.slice(0, -1);
+    currentInput = currentInput.slice(0, -1);
+
+    if (isOperator(lastChar)) {
+        currentOperator = null;
+    }
 }
