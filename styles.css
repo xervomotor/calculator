@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 80vh;
     flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .calculator {
@@ -26,7 +27,8 @@ body {
     align-items: flex-end;
     padding: 10px 20px;
     border-radius: 10px;
-    height: 30px;
+    height: 40px;
+    font-size: x-large;
 }
 
 .buttons-grid {
@@ -48,7 +50,7 @@ body {
 
 .span-2 {
     grid-column: span 2;
-    background-color: rgb(255, 239, 67);
+    background-color: rgb(255, 218, 53);
     color: black;
 }
 
